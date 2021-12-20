@@ -15,7 +15,7 @@ public class Product {
     private String reference;
     private String brand;
     private String category;
-    private String presentation;
+    //private String presentation;
     private String description;
     private boolean availability;
     private Double price;

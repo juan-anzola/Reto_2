@@ -41,9 +41,10 @@ public class ProductService {
                 if (product.getCategory() != null) {
                     dbProduct.get().setCategory(product.getCategory());
                 }
-                if (product.getPresentation() != null) {
+                /*if (product.getPresentation() != null) {
                     dbProduct.get().setPresentation(product.getPresentation());
-                }
+                }*/
+
                 if (product.getDescription() != null) {
                     dbProduct.get().setDescription(product.getDescription());
                 }
@@ -54,8 +55,8 @@ public class ProductService {
                     dbProduct.get().setQuantity(product.getQuantity());
                 }
                 if (product.getPhotography() != null) {
-                    dbProduct.get().setPhotography(product.getPhotography());
-                }
+                        dbProduct.get().setPhotography(product.getPhotography());
+                    }
                 dbProduct.get().setAvailability(product.isAvailability());
                 productRepository.update(dbProduct.get());
                 return dbProduct.get();
